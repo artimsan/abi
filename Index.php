@@ -292,7 +292,7 @@ save("data/$from_id/link.txt","");
  'parse_mode'=>'MarkDown',
   ]);
 }
-elseif ($textin = "Ads") {
+elseif ($textin == "Ads") {
    MrPHPBot('answerInlineQuery', [
         'inline_query_id' => $update->inline_query->id,
         'results' => json_encode([[
